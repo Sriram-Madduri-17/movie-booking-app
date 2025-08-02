@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px auto;
+            max-width: 500px;
+            background-color: #eafaf1;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Booking Confirmed!</h1>
+    <p>Thank you, <strong>{{ name }}</strong>.</p>
+    <p>Your booking for <strong>{{ tickets }}</strong> ticket(s) to see <strong>{{ movie }}</strong> is confirmed.</p>
+    <a href="/">Book more tickets</a>
+</body>
+</html>
